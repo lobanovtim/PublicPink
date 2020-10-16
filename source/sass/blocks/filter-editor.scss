@@ -1,0 +1,306 @@
+.filter-editor {
+  padding: 0 0 15px 0;
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: -25px;
+    height: 1px;
+    width: 120%;
+    background-color: rgba($color: $dark-grey, $alpha: 0.1);
+
+    @media (min-width: $tablet-width) {
+      display: none;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    padding: 0 0 48px 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 0 102px 0;
+  }
+}
+
+.filter-editor__list {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0 0 0 0;
+  margin: 0 20px 20px 20px;
+  list-style: none;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin: 34px 0 2px 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 0 0 0;
+  }
+}
+
+.filter-editor__item {
+  margin: 0 0 0 0;
+
+  & .filter-editor__icon {
+    fill: $dark-grey;
+    opacity: 0.3;
+  }
+
+  & .filter-editor__icon--active-icon {
+    fill: $red;
+    opacity: 1;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin: 0 0 16px 0;
+
+    & .filter-editor__icon {
+      fill: $red;
+      opacity: 1;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 0 0 0;
+  }
+
+  & .filter-editor__icon-contrast {
+    width: 32px;
+    height: 32px;
+
+    @media (min-width: $tablet-width) {
+      width: 16px;
+      height: 16px;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 32px;
+      height: 32px;
+    }
+  }
+
+  &:nth-child(2) {
+    margin: 0 10px 0 8px;
+
+    @media (min-width: $tablet-width) {
+      margin: 9px 0 10px 0;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin: 13px 0 17px 0;
+    }
+  }
+
+  &:nth-child(3) {
+    margin: 0 18px 0 0;
+
+    @media (min-width: $tablet-width) {
+      margin: 0 0 0 0;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin: 0 0 29px 0;
+    }
+  }
+}
+
+.filter-editor__range {
+  width: 92%;
+  height: 2px;
+  cursor: pointer;
+  background-color: $dark-grey;
+  border: none;
+  border-radius: none;
+  margin: 0 0 20px 0;
+  padding: 0;
+  border-bottom: 2px solid rgba($color: $dark-grey, $alpha: 0.1);
+
+  @media (min-width: $tablet-width) {
+    border-bottom: none;
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: 2px;
+      right: 0;
+      height: 1px;
+      width: 112%;
+      background-color: rgba($color: $dark-grey, $alpha: 0.1);
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    &::after {
+      bottom: 26px;
+      right: 70px;
+      width: 95%;
+    }
+  }
+}
+
+.filter-editor__range-wrapper {
+  width: 100%;
+
+  @media (min-width: $tablet-width) {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 220px;
+    margin: 32px 0 0 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 0 0 0;
+    padding: 21px 0 0 0;
+  }
+}
+
+.filter-editor__container {
+  margin: 0 0 0 20px;
+  position: relative;
+
+  @media (min-width: $tablet-width) {
+    padding: 31px 0 18px 27px;
+    margin: 0 -11px 0 0;
+    flex-direction: column;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 76px 41px 44px;
+  }
+}
+
+.filter-editor__icon {
+  @media (min-width: $tablet-width) {
+    width: 24px;
+    height: 22px;
+    fill: $red;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 32px;
+    height: 32px;
+  }
+}
+
+.filter-editor__icon-crop {
+  @media (min-width: $desktop-width) {
+    width: 44px;
+    height: 44px;
+  }
+}
+
+.filter-editor__icon-fill {
+  @media (min-width: $desktop-width) {
+    width: 48px;
+    height: 43px;
+  }
+}
+
+input[type="range"] {
+  height: 2px;
+  appearance: none;
+  width: 92%;
+  border: none;
+}
+
+input[type="range"]::-webkit-slider-runnable-track {
+  width: 92%;
+  height: 2px;
+  cursor: pointer;
+  background: $dark-grey;
+  border: none;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  border: 2px solid $red;
+  height: 14px;
+  width: 14px;
+  border-radius: 50%;
+  background: $white;
+  cursor: pointer;
+  appearance: none;
+  margin-top: -5px;
+}
+
+input[type="range"]:focus::-webkit-slider-runnable-track {
+  background: $dark-grey;
+  border: none;
+}
+
+input[type="range"]::-moz-range-track {
+  width: 92%;
+  height: 2px;
+  cursor: pointer;
+  background: $dark-grey;
+  border: none;
+}
+
+input[type="range"]::-moz-range-thumb {
+  border: 2px solid $red;
+  height: 14px;
+  width: 14px;
+  border-radius: 50%;
+  background: $white;
+  cursor: pointer;
+
+  &:focus {
+    background-color: $red;
+  }
+}
+
+input[type="range"]::-ms-track {
+  width: 92%;
+  height: 2px;
+  cursor: pointer;
+  background: transparent;
+  border-color: transparent;
+  color: transparent;
+}
+
+input[type="range"]::-ms-fill-lower {
+  background: $dark-grey;
+}
+
+input[type="range"]::-ms-fill-upper {
+  background: $dark-grey;
+}
+
+input[type="range"]::-ms-thumb {
+  margin-top: 1px;
+  border: 2px solid $red;
+  height: 14px;
+  width: 14px;
+  border-radius: 50%;
+  background: $white;
+  cursor: pointer;
+
+  &:focus {
+    background-color: $red;
+  }
+}
+
+input[type="range"]:focus::-ms-fill-lower {
+  background: $dark-grey;
+  border: none;
+}
+
+input[type="range"]:focus::-ms-fill-upper {
+  background: $dark-grey;
+  border: none;
+}
+
+.filter-editor__range--no-active {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+  }
+}

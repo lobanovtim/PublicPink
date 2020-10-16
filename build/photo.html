@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <title>Фотографии пользователей</title>
+    <link rel="preload" href="fonts/opensanslight.woff2" as="font" type="font/woff2" crossorigin="">
+    <link rel="preload" href="fonts/opensans.woff2" as="font" type="font/woff2" crossorigin="">
+    <link rel="preload" href="fonts/opensansbold.woff2" as="font" type="font/woff2" crossorigin="">
+    <link rel="preload" href="fonts/opensanslight.woff" as="font" type="font/woff" crossorigin="">
+    <link rel="preload" href="fonts/opensans.woff" as="font" type="font/woff" crossorigin="">
+    <link rel="preload" href="fonts/opensansbold.woff" as="font" type="font/woff" crossorigin="">
+    <link rel="stylesheet" href="css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+  <body class="page">
+    <header class="page-header">
+      <div class="page-header__wrapper">
+        <a class="page-header__logo" href="index.html">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/logo-pink-white-desktop.svg">
+            <source media="(min-width: 660px)" srcset="img/logo-pink-white-tablet.svg">
+            <img class="page-header__logo-img" src="img/logo-pink-white-mobile.svg" width="74" height="23" alt="Логотип приложения «Pink»">
+          </picture>
+        </a>
+        <nav class="main-nav">
+          <button class="button main-nav__button main-nav__button--open" type="button">
+            <svg class="main-nav__button-icon-open" width="50px" height="24px">
+              <use xlink:href="img/sprite.svg#icon-menu-burger"></use>
+            </svg>
+            <span class="visually-hidden">Открыть</span>
+          </button>
+          <button class="button main-nav__button main-nav__button--close" type="button">
+            <svg class="main-nav__button-icon-close" width="24px" height="24px">
+              <use xlink:href="img/sprite.svg#icon-menu-cross"></use>
+            </svg>
+            <span class="visually-hidden">Закрыть меню</span>
+          </button>
+          <ul class="main-nav__list site-list">
+            <li class="site-list__item">
+              <a class="site-list__link" href="index.html"> Главная </a>
+            </li>
+            <li class="site-list__item site-list__item--active">
+              <a class="site-list__link"> Фотографии </a>
+            </li>
+            <li class="site-list__item">
+              <a class="site-list__link" href="form.html"> Конкурс </a>
+            </li>
+            <li class="site-list__item">
+              <a class="site-list__link" href="https://htmlacademy.ru">
+                HTML Academy
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main class="page-photo">
+      <div class="page-photo__wrapper">
+        <h1 class="page-photo__title container">Фотографии пользователей</h1>
+      </div>
+      <section class="users-tape">
+        <h2 class="visually-hidden">
+          Фотографии, которыми уже поделились наши пользователи
+        </h2>
+        <p class="users-tape__slogan">
+          Взгляните на фотографии, которые выкладывают пользователи!<br>Видите,
+          как не хватает ваших?
+        </p>
+        <ul class="users-tape__list container">
+          <li class="users-tape__item">
+            <a class="users-tape__link users-tape__link--panorama" href="#">
+              <picture>
+                <source type="image/webp" media="(min-width: 1200px)" srcset="
+                    img/panorama-desktop@1x.webp 1x,
+                    img/panorama-desktop@2x.webp 2x
+                  ">
+                <source type="image/webp" media="(min-width: 660px)" srcset="
+                    img/panorama-desktop@1x.webp 1x,
+                    img/panorama-desktop@2x.webp 2x
+                  ">
+                <source type="image/webp" srcset="
+                    img/panorama-desktop@1xwebp  1x,
+                    img/panorama-desktop@2x.webp 2x
+                  ">
+                <source media="(min-width: 1200px)" srcset="
+                    img/panorama-desktop@1x.jpg 1x,
+                    img/panorama-desktop@2x.jpg 2x
+                  ">
+                <source media="(min-width: 660px)" srcset="
+                    img/panorama-tablet@1x.jpg 1x,
+                    img/panorama-tablet@2x.jpg 2x
+                  ">
+                <img class="users-tape__image users-tape__image--panorama" src="img/panorama-mobile@1x.jpg" srcset="img/panorama-mobile@2x.jpg 2x" alt="Подвесной мост">
+              </picture>
+            </a>
+            <span class="users-tape__panorama-label">Панорама дня</span>
+            <div class="users-tape__wrapper users-tape__wrapper--panorama">
+              <p class="users-tape__user">Анна</p>
+              <p class="users-tape__time-post">(5 минут назад)</p>
+              <blockquote class="users-tape__comment">
+                Прыгать или нет? Напишите в комментарии свой совет и смотрите
+                прямую трансляцию в перископе, задавайте свои вопросы!
+              </blockquote>
+              <div class="users-tape__like">
+                <span class="users-tape__like-image">
+                  <svg width="12px" height="12px">
+                    <use xlink:href="img/sprite.svg#icon-heart"></use>
+                  </svg>
+                  <span class="visually-hidden">Поставить лайк</span>
+                </span>
+                <p class="users-tape__like-counter">Нравится: 215</p>
+              </div>
+            </div>
+          </li>
+          <li class="users-tape__item">
+            <a class="users-tape__link" href="#">
+              <picture>
+                <source type="image/webp" media="(min-width: 1200px)" srcset="
+                    img/photo-car-desktop@1x.webp 1x,
+                    img/photo-car-desktop@2x.webp 2x
+                  ">
+                <source type="image/webp" media="(min-width: 660px)" srcset="
+                    img/photo-car-desktop@1x.webp 1x,
+                    img/photo-car-desktop@2x.webp 2x
+                  ">
+                <source type="image/webp" srcset="
+                    img/photo-car-desktop@1xwebp  1x,
+                    img/photo-car-desktop@2x.webp 2x
+                  ">
+                <source media="(min-width: 1200px)" srcset="
+                    img/photo-car-desktop@1x.jpg 1x,
+                    img/photo-car-desktop@2x.jpg 2x
+                  ">
+                <source media="(min-width: 660px)" srcset="
+                    img/photo-car-tablet@1x.jpg 1x,
+                    img/photo-car-tablet@2x.jpg 2x
+                  ">
+                <img class="users-tape__image" src="img/photo-car-mobile@1x.jpg" srcset="img/photo-car-mobile@2x.jpg 2x" width="280" height="180" alt="Машина у стены">
+              </picture>
+            </a>
+            <div class="users-tape__wrapper">
+              <p class="users-tape__user">Левон</p>
+              <p class="users-tape__time-post">(5 часов назад)</p>
+              <blockquote class="users-tape__comment">
+                Вчера он на луну летал, сегодня в руки к нам попал.
+              </blockquote>
+              <div class="users-tape__like">
+                <span class="users-tape__like-image">
+                  <svg width="12px" height="12px">
+                    <use xlink:href="img/sprite.svg#icon-heart"></use>
+                  </svg>
+                </span>
+                <p class="users-tape__like-counter">Нравится: 356</p>
+              </div>
+            </div>
+          </li>
+          <li class="users-tape__item">
+            <a class="users-tape__link" href="#">
+              <picture>
+                <source type="image/webp" media="(min-width: 1200px)" srcset="
+                    img/photo-drumset-desktop@1x.webp 1x,
+                    img/photo-drumset-desktop@2x.webp 2x
+                  ">
+                <source type="image/webp" media="(min-width: 660px)" srcset="
+                    img/photo-drumset-desktop@1x.webp 1x,
+                    img/photo-drumset-desktop@2x.webp 2x
+                  ">
+                <source type="image/webp" srcset="
+                    img/photo-drumset-desktop@1xwebp  1x,
+                    img/photo-drumset-desktop@2x.webp 2x
+                  ">
+                <source media="(min-width: 1200px)" srcset="
+                    img/photo-drumset-desktop@1x.jpg 1x,
+                    img/photo-drumset-desktop@2x.jpg 2x
+                  ">
+                <source media="(min-width: 660px)" srcset="
+                    img/photo-drumset-tablet@1x.jpg 1x,
+                    img/photo-drumset-tablet@2x.jpg 2x
+                  ">
+                <img class="users-tape__image" src="img/photo-drumset-mobile@1x.jpg" srcset="img/photo-drumset-mobile@2x.jpg 2x" width="280" height="180" alt="Барабанная установка">
+              </picture>
+            </a>
+            <div class="users-tape__wrapper">
+              <p class="users-tape__user">Антон</p>
+              <p class="users-tape__time-post">(12 часов назад)</p>
+              <blockquote class="users-tape__comment">
+                Соседи будут рады!
+              </blockquote>
+              <div class="users-tape__like">
+                <span class="users-tape__like-image">
+                  <svg width="12px" height="12px">
+                    <use xlink:href="img/sprite.svg#icon-heart"></use>
+                  </svg>
+                </span>
+                <p class="users-tape__like-counter">Нравится: 666</p>
+              </div>
+            </div>
+          </li>
+          <li class="users-tape__item">
+            <a class="users-tape__link" href="#">
+              <picture>
+                <source type="image/webp" media="(min-width: 1200px)" srcset="
+                    img/photo-window-desktop@1x.webp 1x,
+                    img/photo-window-desktop@2x.webp 2x
+                  ">
+                <source type="image/webp" media="(min-width: 660px)" srcset="
+                    img/photo-window-desktop@1x.webp 1x,
+                    img/photo-window-desktop@2x.webp 2x
+                  ">
+                <source type="image/webp" srcset="
+                    img/photo-window-desktop@1xwebp  1x,
+                    img/photo-window-desktop@2x.webp 2x
+                  ">
+                <source media="(min-width: 1200px)" srcset="
+                    img/photo-window-desktop@1x.jpg 1x,
+                    img/photo-window-desktop@2x.jpg 2x
+                  ">
+                <source media="(min-width: 660px)" srcset="
+                    img/photo-window-tablet@1x.jpg 1x,
+                    img/photo-window-tablet@2x.jpg 2x
+                  ">
+                <img class="users-tape__image" src="img/photo-window-mobile@1x.jpg" srcset="img/photo-window-mobile@2x.jpg 2x" width="280" height="180" alt="Стеклянный небоскрёб">
+              </picture>
+            </a>
+            <div class="users-tape__wrapper">
+              <p class="users-tape__user">Борис</p>
+              <p class="users-tape__time-post">(20 часов назад)</p>
+              <blockquote class="users-tape__comment">
+                Здесь могла быть ваша цитата о высоком и вечном.
+              </blockquote>
+              <div class="users-tape__like">
+                <span class="users-tape__like-image">
+                  <svg width="12px" height="12px">
+                    <use xlink:href="img/sprite.svg#icon-heart"></use>
+                  </svg>
+                </span>
+                <p class="users-tape__like-counter">Нравится: 215</p>
+              </div>
+            </div>
+          </li>
+          <li class="users-tape__item">
+            <a class="users-tape__link" href="#">
+              <picture>
+                <source type="image/webp" media="(min-width: 1200px)" srcset="
+                    img/photo-fair-desktop@1x.webp 1x,
+                    img/photo-fair-desktop@2x.webp 2x
+                  ">
+                <source type="image/webp" media="(min-width: 660px)" srcset="
+                    img/photo-fair-desktop@1x.webp 1x,
+                    img/photo-fair-desktop@2x.webp 2x
+                  ">
+                <source type="image/webp" srcset="
+                    img/photo-fair-desktop@1xwebp  1x,
+                    img/photo-fair-desktop@2x.webp 2x
+                  ">
+                <source media="(min-width: 1200px)" srcset="
+                    img/photo-fair-desktop@1x.jpg 1x,
+                    img/photo-fair-desktop@2x.jpg 2x
+                  ">
+                <source media="(min-width: 660px)" srcset="
+                    img/photo-fair-tablet@1x.jpg 1x,
+                    img/photo-fair-tablet@2x.jpg 2x
+                  ">
+                <img class="users-tape__image" src="img/photo-fair-mobile@1x.jpg" srcset="img/photo-fair-mobile@2x.jpg 2x" width="280" height="180" alt="Кубанская бахча">
+              </picture>
+            </a>
+            <div class="users-tape__wrapper">
+              <p class="users-tape__user">Сергей</p>
+              <p class="users-tape__time-post">(25 часов назад)</p>
+              <blockquote class="users-tape__comment">
+                Самая кубанская в мире!
+              </blockquote>
+              <div class="users-tape__like">
+                <span class="users-tape__like-image">
+                  <svg width="12px" height="12px">
+                    <use xlink:href="img/sprite.svg#icon-heart"></use>
+                  </svg>
+                </span>
+                <p class="users-tape__like-counter">Нравится: 4</p>
+              </div>
+            </div>
+          </li>
+          <li class="users-tape__item">
+            <a class="users-tape__link" href="#">
+              <picture>
+                <source type="image/webp" media="(min-width: 1200px)" srcset="
+                    img/photo-pov-desktop@1x.webp 1x,
+                    img/photo-pov-desktop@2x.webp 2x
+                  ">
+                <source type="image/webp" media="(min-width: 660px)" srcset="
+                    img/photo-pov-desktop@1x.webp 1x,
+                    img/photo-pov-desktop@2x.webp 2x
+                  ">
+                <source type="image/webp" srcset="
+                    img/photo-pov-desktop@1xwebp  1x,
+                    img/photo-pov-desktop@2x.webp 2x
+                  ">
+                <source media="(min-width: 1200px)" srcset="
+                    img/photo-pov-desktop@1x.jpg 1x,
+                    img/photo-pov-desktop@2x.jpg 2x
+                  ">
+                <source media="(min-width: 660px)" srcset="
+                    img/photo-pov-tablet@1x.jpg 1x,
+                    img/photo-pov-tablet@2x.jpg 2x
+                  ">
+                <img class="users-tape__image" src="img/photo-pov-mobile@1x.jpg" srcset="img/photo-pov-mobile@2x.jpg 2x" width="280" height="180" alt="Горный пейзаж">
+              </picture>
+            </a>
+            <div class="users-tape__wrapper">
+              <p class="users-tape__user">Максим</p>
+              <p class="users-tape__time-post">(40 часов назад)</p>
+              <blockquote class="users-tape__comment">Где снег-то?</blockquote>
+              <div class="users-tape__like">
+                <span class="users-tape__like-image">
+                  <svg width="12px" height="12px">
+                    <use xlink:href="img/sprite.svg#icon-heart"></use>
+                  </svg>
+                </span>
+                <p class="users-tape__like-counter">Нравится: 150</p>
+              </div>
+            </div>
+          </li>
+          <li class="users-tape__item">
+            <a class="users-tape__link" href="#">
+              <picture>
+                <source type="image/webp" media="(min-width: 1200px)" srcset="
+                    img/photo-wing-desktop@1x.webp 1x,
+                    img/photo-wing-desktop@2x.webp 2x
+                  ">
+                <source type="image/webp" media="(min-width: 660px)" srcset="
+                    img/photo-wing-desktop@1x.webp 1x,
+                    img/photo-wing-desktop@2x.webp 2x
+                  ">
+                <source type="image/webp" srcset="
+                    img/photo-wing-desktop@1xwebp  1x,
+                    img/photo-wing-desktop@2x.webp 2x
+                  ">
+                <source media="(min-width: 1200px)" srcset="
+                    img/photo-wing-desktop@1x.jpg 1x,
+                    img/photo-wing-desktop@2x.jpg 2x
+                  ">
+                <source media="(min-width: 660px)" srcset="
+                    img/photo-wing-tablet@1x.jpg 1x,
+                    img/photo-wing-tablet@2x.jpg 2x
+                  ">
+                <img class="users-tape__image" src="img/photo-wing-mobile@1x.jpg 1x" srcset="img/photo-wing-mobile@2x.jpg 2x" width="280px" height="180px" alt="Крыло самолёта на закате">
+              </picture>
+            </a>
+            <div class="users-tape__wrapper">
+              <p class="users-tape__user">Надежда</p>
+              <p class="users-tape__time-post">(45 часов назад)</p>
+              <blockquote class="users-tape__comment">
+                Всем GM и взаимные лайки!
+              </blockquote>
+              <div class="users-tape__like">
+                <span class="users-tape__like-image">
+                  <svg width="12px" height="12px">
+                    <use xlink:href="img/sprite.svg#icon-heart"></use>
+                  </svg>
+                </span>
+                <p class="users-tape__like-counter">Нравится: 2560</p>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </section>
+      <section class="photo-post">
+        <h2 class="visually-hidden">Добавьте свою фотографию</h2>
+        <p class="photo-post__slogan">
+          Затмите их всех!<br>
+          Выкладывайте все, что накопилось в телефоне!
+        </p>
+        <div class="photo-post__wrapper container">
+          <picture>
+            <source type="image/webp" media="(min-width: 1200px)" srcset="
+                img/photo-road-desktop@1x.webp 1x,
+                img/photo-road-desktop@2x.webp 2x
+              ">
+            <source type="image/webp" media="(min-width: 660px)" srcset="
+                img/photo-road-desktop@1x.webp 1x,
+                img/photo-road-desktop@2x.webp 2x
+              ">
+            <source type="image/webp" srcset="
+                img/photo-road-desktop@1xwebp  1x,
+                img/photo-road-desktop@2x.webp 2x
+              ">
+            <source media="(min-width: 1200px)" srcset="
+                img/photo-road-desktop@1x.jpg 1x,
+                img/photo-road-desktop@2x.jpg 2x
+              ">
+            <source media="(min-width: 660px)" srcset="
+                img/photo-road-tablet@1x.jpg 1x,
+                img/photo-road-tablet@2x.jpg 2x
+              ">
+            <img class="photo-post__image" src="img/photo-road-mobile@1x.jpg" srcset="img/photo-road-mobile@2x.jpg 2x" width="280" height="374" alt="Ваша фотография">
+          </picture>
+          <div class="filter-editor">
+            <div class="photo-post__filter filter-editor">
+              <ul class="filter-editor__list">
+                <li class="filter-editor__item filter-editor__crop">
+                  <svg class="filter-editor__icon filter-editor__icon--active-icon filter-editor__icon-crop" width="44px" height="44px">
+                    <use xlink:href="img/sprite.svg#icon-editor-crop"></use>
+                  </svg>
+                  <span class="visually-hidden">Размер фотографии</span>
+                </li>
+                <li class="filter-editor__item filter-editor__fill">
+                  <svg class="filter-editor__icon filter-editor__icon-fill" width="48px" height="48px">
+                    <use xlink:href="img/sprite.svg#icon-editor-fill"></use>
+                  </svg>
+                  <span class="visually-hidden">Заливка</span>
+                </li>
+                <li class="filter-editor__item filter-editor__contrast">
+                  <svg class="filter-editor__icon filter-editor__icon-contrast" width="32px" height="32px">
+                    <use xlink:href="img/sprite.svg#icon-editor-contrast"></use>
+                  </svg>
+                  <span class="visually-hidden">Контраст</span>
+                </li>
+              </ul>
+              <div class="filter-editor__range-wrapper">
+                <div class="filter-editor__container">
+                  <input class="filter-editor__range filter-editor__range--crop filter-editor__range--active filter-editor__active-range" type="range" id="crop" name="cowbell" min="0" max="100" value="85" step="1">
+                  <label class="visually-hidden" for="crop">Размер фотографии</label>
+                </div>
+                <div class="filter-editor__container">
+                  <input class="filter-editor__range filter-editor__range--fill filter-editor__range--no-active" type="range" id="fill" name="cowbell" min="0" max="100" value="15" step="1">
+                  <label class="visually-hidden" for="fill">Заливка</label>
+                </div>
+                <div class="filter-editor__container">
+                  <input class="filter-editor__range filter-editor__range--contast filter-editor__range--no-active" type="range" id="contast" name="cowbell" min="0" max="100" value="50" step="1">
+                  <label class="visually-hidden" for="contast">Контраст</label>
+                </div>
+              </div>
+            </div>
+          </div>
+              <div class="photo-post__button-wrapper">
+                <button class="button photo-post__button photo-post__button--send-post" type="submit">
+                  Запостить
+                </button>
+                <button class="button photo-post__button photo-post__button--cancel" type="submit">
+                  Отмена
+                </button>
+              </div>
+        </div>
+      </section>
+    </main>
+    <footer class="page-footer container">
+      <a class="page-footer__link" href="index.html">
+        <picture>
+          <source media="(min-width: 1200px)" srcset="img/logo-pink-blue-desktop.svg">
+          <img class="page-footer__logo" src="img/logo-pink-blue-mobile.svg" width="145" height="40" alt="Мобильное приложение «Pink»">
+        </picture>
+      </a>
+      <div class="page-footer__social social">
+        <ul class="social__list">
+          <li class="social__item">
+            <a class="social__link" href="#" aria-label="Ссылка на наш Твиттер">
+              <svg width="17" height="15">
+                <use xlink:href="img/sprite.svg#icon-twitter"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link" href="#" aria-label="Ссылка на наш Фейсбук">
+              <svg width="9px" height="19px">
+                <use xlink:href="img/sprite.svg#icon-facebook"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link" href="#" aria-label="Ссылка на наш Ютьюб">
+              <svg width="15px" height="14px">
+                <use xlink:href="img/sprite.svg#icon-youtube"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="page-footer__copyright copyright">
+        <p class="copyright__text">Разработано</p>
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="Ссылка на HTML Academy">
+          <svg width="27px" height="34px">
+            <use xlink:href="img/sprite.svg#icon-logo-htmlacademy"></use>
+          </svg>
+        </a>
+      </div>
+    </footer>
+    <script src="js/menu.js"></script>
+  </body>
+</html>
